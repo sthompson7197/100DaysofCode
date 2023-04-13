@@ -36,8 +36,12 @@ elif first_choice == "left":
         print("Attacked by trout. Game over.")
     elif second_choice == "wait":
         third_choice = input('You arrive at the island unharmed. There is a house with 3 doors. One red, one yellow, and one blue. Which colour do you choose? Type "red", "yellow", or "blue".')
-        if third_choice != "blue":
-            print("You enter a room of beasts. Game over.")
+        if third_choice == "red":
+            print("Burned by fire. Game over.")
         elif third_choice == "blue":
+            print("Eaten by beasts. Game over.")
+        elif third_choice == "yellow":
             print("You won the game!")
+        else:
+            print("Game over.")
     
